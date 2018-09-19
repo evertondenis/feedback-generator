@@ -26,12 +26,15 @@ class App extends Component {
         </Link>
         <Container>
           <div>
-            <Text>
-              {answer}
-            </Text>
+            <h1>Deu branco na hora de dar aquele feedback?</h1>
             <Button onClick={this.randomAnswer}>
               GENERATE FEEDBACK
             </Button>
+          </div>
+          <div>
+            <Text>
+              {answer}
+            </Text>
           </div>
         </Container>
       </Fragment>
