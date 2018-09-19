@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { answers } from './answers'
 import './App.css'
-import { Container, Text, Button, Smithers } from './styled'
-import smithers from './core/assets/images/smithers1.jpg'
+import { Container, Text, Button } from './styled'
 
 class App extends Component {
 
@@ -30,7 +29,6 @@ class App extends Component {
             GENERATE FEEDBACK
           </Button>
         </div>
-          {/* <Smithers src={smithers} alt="smithers" /> */}
       </Container>
     )
   }
