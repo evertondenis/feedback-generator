@@ -30,3 +30,15 @@ export const Button = styled.button`
     transition: all .2s ease;
   }
 `
+
+export const Link = styled.a`
+  position: absolute;
+  padding: 10px;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    color: tomato;
+  }
+`

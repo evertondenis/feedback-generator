@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { answers } from './answers'
 import './App.css'
-import { Container, Text, Button } from './styled'
+import { Link, Container, Text, Button } from './styled'
 
 class App extends Component {
 
@@ -20,16 +20,21 @@ class App extends Component {
     const { answer } = this.state
 
     return (
-      <Container>
-        <div>
-          <Text>
-            {answer}
-          </Text>
-          <Button onClick={this.randomAnswer}>
-            GENERATE FEEDBACK
-          </Button>
-        </div>
-      </Container>
+      <Fragment>
+        <Link href="https://github.com/evertondenis">
+          GIT HUB
+        </Link>
+        <Container>
+          <div>
+            <Text>
+              {answer}
+            </Text>
+            <Button onClick={this.randomAnswer}>
+              GENERATE FEEDBACK
+            </Button>
+          </div>
+        </Container>
+      </Fragment>
     )
   }
 }
