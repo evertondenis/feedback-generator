@@ -26,7 +26,7 @@ class App extends Component {
 
     return (
       <Fragment>
-        <Link href="https://github.com/evertondenis">
+        <Link href="https://github.com/evertondenis/feedback-generator">
           GIT HUB
         </Link>
         <Container>
