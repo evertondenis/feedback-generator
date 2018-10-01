@@ -1,12 +1,11 @@
 import React, { Component, Fragment } from 'react'
 import { answers } from './answers'
-import './App.css'
-import { Link, Container, Text, Button } from './styled'
+import { AnswerStyled, Link, Container, Text, ContainerButtons, Button } from './styled'
 
 class App extends Component {
 
   state = {
-    answer: "Let's Go!",
+    answer: 'Deu branco na hora de dar aquele feedback?',
   }
 
   randomAnswer = () => {
@@ -14,6 +13,12 @@ class App extends Component {
     const feedback = Math.floor(Math.random() * total)
     const answer = answers[feedback]
     this.setState({ answer })
+  }
+
+  copyFeedback = () => {
+    const feedback = document.getElementById("feedback")
+    feedback.select()
+    document.execCommand('copy')
   }
 
   render() {
@@ -26,16 +31,22 @@ class App extends Component {
         </Link>
         <Container>
           <div>
-            <h1>Deu branco na hora de dar aquele feedback?</h1>
+            <AnswerStyled>
+              <Text id="feedback"
+                onChange={() => null}
+                value={answer}
+                rows="7"
+              />
+            </AnswerStyled>
+          </div>
+          <ContainerButtons>
             <Button onClick={this.randomAnswer}>
-              GENERATE FEEDBACK
+              GERAR FEEDBACK
             </Button>
-          </div>
-          <div>
-            <Text>
-              {answer}
-            </Text>
-          </div>
+            <Button onClick={this.copyFeedback}>
+              COPIAR
+            </Button>
+          </ContainerButtons>
         </Container>
       </Fragment>
     )

@@ -14,21 +14,38 @@ export const Smithers = styled.img`
   align-self: flex-end;
 `
 
-export const Text = styled.p`
-  font-size: 2em;
+export const Text = styled.textarea`
+  border: 0;
+  height: auto;
+  background: transparent;
+  font-size: 2.4em;
+  outline: none;
+  resize: none;
+  overflow: auto;
+  overflow: hidden;
+`
+
+export const ContainerButtons = styled.div`
+  width: 224px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `
 
 export const Button = styled.button`
-  border: 0;
-  background-color: tomato;
-  color: #000;
-  padding: 15px 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid black;
+  background: transparent;
+  font-size: 1em;
+  color: black;
+  padding: 10px;
   cursor: pointer;
   transition: all .2s ease;
 
   &:hover {
-    background-color: papayawhip;
-    transition: all .2s ease;
+    background-color: white;
+    color: black;
   }
 `
 
@@ -41,5 +58,20 @@ export const Link = styled.a`
 
   &:hover {
     color: tomato;
+  }
+`
+
+export const AnswerStyled = styled.div`
+  width: 200px;
+  height: auto;
+  margin: 40px auto;
+  padding: 10px;
+  border: 2px solid black;
+  display: flex;
+
+  p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
   }
 `
