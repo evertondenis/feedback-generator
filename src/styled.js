@@ -51,6 +51,8 @@ export const Button = styled.button`
 
 export const Link = styled.a`
   position: absolute;
+  left: 10px;
+  top: 10px;
   padding: 10px;
   font-size: 1.4em;
   text-decoration: none;

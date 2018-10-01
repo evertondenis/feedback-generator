@@ -5,7 +5,7 @@ import { AnswerStyled, Link, Container, Text, ContainerButtons, Button } from '.
 class App extends Component {
 
   state = {
-    answer: 'Deu branco na hora de dar aquele feedback?',
+    answer: 'Deu branco na hora de dar aquele feedback? Clique no botão e escolha um para aquele teu colega!',
   }
 
   randomAnswer = () => {
